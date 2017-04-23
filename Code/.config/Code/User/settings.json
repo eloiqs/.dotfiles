@@ -1,0 +1,9 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontFamily": "Operator Mono Book",
+    "editor.fontSize": 16,
+    "workbench.colorTheme": "Oceanic Next (dimmed bg)",
+    "search.useIgnoreFilesByDefault": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.tabSize": 2
+}

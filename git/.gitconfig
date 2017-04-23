@@ -1,0 +1,5 @@
+[user]
+	email = eloi.qs@mail.com
+	name = eloi simard-quesnel
+[core]
+	editor = nvim
