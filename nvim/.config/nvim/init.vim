@@ -41,6 +41,7 @@ let g:airline_theme='base16_oceanicnext'
 
 " NERDTree settings
 let g:NERDTreeDirArrows=0
+let NERDTreeShowHidden=1
 
 " special key bindings
 nnoremap <C-p> :FuzzyOpen<CR>
