@@ -9,7 +9,7 @@ autocmd BufEnter * silent! lcd %:p:h
 
 " vim-plug
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'othree/yajs.vim'
+Plug 'pangloss/vim-javascript'
 Plug 'othree/html5.vim'
 Plug 'https://github.com/HerringtonDarkholme/yats.vim.git'
 Plug 'mhartington/oceanic-next'
@@ -25,12 +25,15 @@ call plug#end()
 if (has("termguicolors"))
  set termguicolors
 endif
-syntax enable
 colorscheme OceanicNext
 
 " font settings
 set encoding=utf8
 set guifont=Operator\ Mono\ for\ Powerline\ 12
+
+" syntax settings
+syntax enable
+let g:jsx_ext_required = 0
 
 " airline settings
 let g:airline_powerline_fonts = 1
