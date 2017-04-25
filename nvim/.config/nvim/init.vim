@@ -5,7 +5,9 @@ set softtabstop=2
 set expandtab
 set number
 set nowrap
-autocmd BufEnter * silent! lcd %:p:h
+
+" search higlighting fix
+nnoremap <esc> :noh<return><esc>
 
 " vim-plug
 call plug#begin('~/.local/share/nvim/plugged')
