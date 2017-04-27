@@ -125,11 +125,11 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # change the DPI
-exec_always xrandr --dpi 220
+exec xrandr --dpi 220
 # run gnome deamon for brightness and volume hotkeys
-exec_always /usr/libexec/gnome-settings-daemon
+exec /usr/libexec/gnome-settings-daemon
 # run compton
-exec_always compton -f
+exec compton -f
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -150,7 +150,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Wallpaper
-exec_always feh --bg-scale ~/Pictures/Wallpapers/main.jpg
+exec feh --bg-scale ~/Pictures/Wallpapers/main.jpg
 
 # Thin borders
 hide_edge_borders both
@@ -209,6 +209,8 @@ bar {
   position top
   font pango:DejaVu Sans Mono 8
 }
+
+exec redshift
 
 # gaps
 gaps inner 10
