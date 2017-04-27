@@ -193,7 +193,7 @@ bindsym $mod+p exec rofi -show run -hide-scrollbar -fullscreen -padding 800 -lin
 
 # bar
 bar {
-  status_command i3status
+  status_command i3blocks -c ~/.config/i3blocks.conf 
 	colors {
     background $base00
     separator  $base01
