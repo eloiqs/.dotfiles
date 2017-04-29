@@ -1,7 +1,5 @@
 set $mod Mod4
 
-font pango:DejaVu Sans Mono 8
-
 floating_modifier $mod
 
 bindsym $mod+Return exec termite 
@@ -189,7 +187,7 @@ hide_edge_borders both
 new_window 1pixel
 
 # Rofi
-bindsym $mod+p exec rofi -show run -hide-scrollbar -fullscreen -padding 800 -lines 4 -font "DejaVu Sans Mono 28" -padding 400 -separator-style none
+bindsym $mod+p exec rofi -show run uhide-scrollbar -fullscreen -padding 800 -lines 4 -font "Operator Mono for Powerline 28" -padding 400 -separator-style none
 
 # bar
 bar {
@@ -207,11 +205,19 @@ bar {
     binding_mode        $base00 $base0A $base00
 	}
   position top
-  font pango:DejaVu Sans Mono 8
+  font pango:Operator Mono for Powerline 10
 }
 
-exec redshift
+# redshift auto-start
+exec --no-startup-id redshift-gtk
+
+bindsym Print exec scrot
 
 # gaps
 gaps inner 10
 gaps outer 10
+
+# touchpas settings
+exec xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+exec xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
+

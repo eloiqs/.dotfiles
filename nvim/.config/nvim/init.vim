@@ -31,7 +31,6 @@ colorscheme OceanicNext
 
 " font settings
 set encoding=utf8
-set guifont=Operator\ Mono\ for\ Powerline\ 12
 
 " syntax settings
 syntax enable

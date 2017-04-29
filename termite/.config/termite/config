@@ -1,3 +1,6 @@
+[options]
+font = Operator Mono for Powerline 12
+
 [colors]
 # Base16 Default Dark
 # Author: Chris Kempson (http://chriskempson.com)
