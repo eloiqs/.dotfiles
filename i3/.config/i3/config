@@ -154,7 +154,7 @@ exec feh --bg-scale ~/Pictures/Wallpapers/main.jpg
 hide_edge_borders both
 
 # Lock
-bindsym $mod+Shift+x exec ~/screen-lock.sh 
+bindsym $mod+Shift+x exec ~/Scripts/screen-lock.sh 
 
 # Base16 OceanicNext colors
 set $base00 #1B2B34
@@ -217,7 +217,9 @@ bindsym Print exec scrot
 gaps inner 10
 gaps outer 10
 
-# touchpas settings
+# touchpad settings
 exec xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 exec xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
 
+# polybar
+exec_always --no-startup-id ~/.config/polybar/launch.sh
