@@ -1,0 +1,9 @@
+README.rst
+setup.py
+Powerline_font_patcher.egg-info/PKG-INFO
+Powerline_font_patcher.egg-info/SOURCES.txt
+Powerline_font_patcher.egg-info/dependency_links.txt
+Powerline_font_patcher.egg-info/not-zip-safe
+Powerline_font_patcher.egg-info/requires.txt
+Powerline_font_patcher.egg-info/top_level.txt
+scripts/powerline-fontpatcher
