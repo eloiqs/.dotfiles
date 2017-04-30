@@ -127,7 +127,7 @@ exec xrandr --dpi 220
 # run gnome deamon for brightness and volume hotkeys
 exec /usr/libexec/gnome-settings-daemon
 # run compton
-exec compton -f
+exec_always compton -f
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
