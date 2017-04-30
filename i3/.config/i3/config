@@ -190,23 +190,23 @@ new_window 1pixel
 bindsym $mod+p exec rofi -show run uhide-scrollbar -fullscreen -padding 800 -lines 4 -font "Operator Mono for Powerline 28" -padding 400 -separator-style none
 
 # bar
-bar {
-  status_command i3blocks -c ~/.config/i3blocks.conf 
-	colors {
-    background $base00
-    separator  $base01
-    statusline $base04
-
-    # State             Border  BG      Text
-    focused_workspace   $base00 $base00 $base0B
-    active_workspace    $base00 $base03 $base00
-    inactive_workspace  $base00 $base00 $base05
-    urgent_workspace    $base00 $base00 $base0D
-    binding_mode        $base00 $base0A $base00
-	}
-  position top
-  font pango:Operator Mono for Powerline 10
-}
+# bar {
+#   status_command i3blocks -c ~/.config/i3blocks.conf 
+# 	colors {
+#     background $base00
+#     separator  $base01
+#     statusline $base04
+#
+#     # State             Border  BG      Text
+#     focused_workspace   $base00 $base00 $base0B
+#     active_workspace    $base00 $base03 $base00
+#     inactive_workspace  $base00 $base00 $base05
+#     urgent_workspace    $base00 $base00 $base0D
+#     binding_mode        $base00 $base0A $base00
+# 	}
+#   position top
+#   font pango:Operator Mono for Powerline 10
+# }
 
 # redshift auto-start
 exec --no-startup-id redshift-gtk
