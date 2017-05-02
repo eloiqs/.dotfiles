@@ -118,3 +118,5 @@ local cmd="rg --files --hidden --follow -g '!{.git,node_modules}/*' 2> /dev/null
 }
 zle     -N   fzf-open-file-or-dir
 bindkey '^P' fzf-open-file-or-dir
+
+source /usr/share/nvm/init-nvm.sh
