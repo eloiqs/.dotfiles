@@ -110,7 +110,7 @@ format-underline = ${colors.foreground}
 [module/wifi]
 inherit = module/network
 
-label-connected = %{A:echo %local_ip% | xclip -sel clip:}%local_ip%%{A} %{A:termite -e "sudo wifi-menu" &:} %essid%%{A}
+label-connected = %{A:echo %local_ip% | xclip -sel clip:}%local_ip%%{A} %{A:termite -e "nmtui" &:} %essid%%{A}
 label-connected-padding-left = 0
 
 format-disconnected-padding = 1
