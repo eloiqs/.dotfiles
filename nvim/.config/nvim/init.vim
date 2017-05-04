@@ -21,6 +21,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'cloudhead/neovim-fuzzy'
 Plug 'mxw/vim-jsx'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " theme settings
@@ -47,6 +48,9 @@ let NERDTreeShowHidden=1
 " special key bindings
 nnoremap <C-p> :FuzzyOpen<CR>
 nnoremap <C-\> :NERDTreeToggle %<CR>
+nnoremap p p`[v`]=
+nnoremap P P`[v`]=
+
 
 " remove bg
 hi! Normal ctermbg=NONE guibg=NONE
