@@ -116,7 +116,7 @@ label-connected-padding-left = 0
 format-disconnected-padding = 1
 format-disconnected-foreground = ${colors.yellow}
 
-label-disconnected = %{A:termite -e "sudo wifi-menu" &:}%{A}
+label-disconnected = %{A:termite -e "nmtui" &:}%{A}
 
 [module/powermenu]
 type = custom/menu
