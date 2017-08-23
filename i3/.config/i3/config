@@ -7,10 +7,10 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+q kill
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -31,7 +31,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+\; split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -84,10 +84,6 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
-
-assign [class="Gnome-terminal"] $workspace1
-assign [class="Google-chrome"] $workspace2
-assign [class="Spotify"] $workspace3
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
