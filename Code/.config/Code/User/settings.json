@@ -1,9 +1,95 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.fontFamily": "Operator Mono Book",
-    "editor.fontSize": 16,
-    "workbench.colorTheme": "Oceanic Next (dimmed bg)",
-    "search.useIgnoreFilesByDefault": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "editor.tabSize": 2
+	"editor.fontSize": 19,
+	"editor.tabSize": 2,
+	"editor.fontFamily": "Operator Mono",
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"www/lib-bower/**/*": true,
+		"www/lib": true,
+		"www/pub/**": true,
+		"dist/www/**": true,
+		".vscode/**": true,
+		"*/**.xml": true,
+		".tscache/**/*": true
+	},
+	"workbench.activityBar.visible": true,
+	"editor.insertSpaces": false,
+	"workbench.colorTheme": "Oceanic Next",
+	"workbench.iconTheme": "seti",
+	"workbench.editor.enablePreviewFromQuickOpen": false,
+	"editor.minimap.renderCharacters": true,
+	"editor.quickSuggestionsDelay": 0,
+	"typescript.format.enable": false,
+	"typescript.useCodeSnippetsOnMethodSuggest": true,
+	"window.zoomLevel": 0,
+	"search.useRipgrep": false,
+	"editor.renderWhitespace": "none",
+	"editor.detectIndentation": false,
+	"typescript.implementationsCodeLens.enabled": true,
+	"vim.handleKeys": {
+		"<C-w>": false,
+		"<C-\/>": false
+	},
+	"vim.autoindent": true,
+	"vim.foldfix": true,
+	"vim.surround": true,
+	"editor.tabCompletion": true,
+	"workbench.colorCustomizations": {
+		"activityBar.background": "#1B2B34",
+		"activityBar.foreground": "#D8DEE9",
+		"activityBar.dropBackground": "#4F5B66",
+		"activityBarBadge.background": "#99C794",
+		"activityBarBadge.foreground": "#1B2B34",
+		"sideBar.background": "#1B2B34",
+		"sideBarSectionHeader.background": "#4F5B66",
+		"sideBarTitle.foreground": "#D8DEE9",
+		"tab.activeBackground": "#D8DEE9",
+		"tab.activeForeground": "#1B2B34",
+		"tab.border": "#1B2B34",
+		"tab.inactiveBackground": "#1B2B34",
+		"tab.inactiveForeground": "#D8DEE9",
+		"editorGroupHeader.tabsBackground": "#1B2B34",
+		"editorGroupHeader.noTabsBackground": "#1B2B34",
+		"editorLineNumber.foreground": "#65737E",
+		"editorSuggestWidget.background": "#1B2B34",
+		"editorSuggestWidget.selectedBackground": "#343D46",
+// "#1B2B34"
+// "#343D46"
+// "#4F5B66"
+// "#65737E"
+// "#A7ADBA"
+// "#C0C5CE"
+// "#CDD3DE"
+// "#D8DEE9"
+// "#EC5f67"
+// "#F99157"
+// "#FAC863"
+// "#99C794"
+// "#5FB3B3"
+// "#6699CC"
+// "#C594C5"
+// "#AB7967"
+		// "button.background": "",
+		// "button.foreground": "",
+		// "button.hoverBackground": "",
+		// "debugExceptionWidget.background": "",
+		// "debugExceptionWidget.border": "",
+		// "debugToolBar.background": "",
+		// "dropdown.background": "",
+		// "dropdown.border": "",
+		// "dropdown.foreground": "",
+		"statusBar.background": "#1B2B34",
+		"statusBar.debuggingBackground": "#EC5f67",
+		"statusBar.foreground": "#D8DEE9",
+		"statusBar.noFolderBackground": "#6699CC",
+		// "statusBarItem.activeBackground": "",
+		"statusBarItem.hoverBackground": "#4F5B66",
+		"statusBarItem.prominentBackground": "#F99157",
+		"statusBarItem.prominentHoverBackground": "#FAC863"
+	},
+	"vim.disableAnnoyingNeovimMessage": true,
+	"editor.renderIndentGuides": false,
+	"editor.minimap.enabled": false
 }
