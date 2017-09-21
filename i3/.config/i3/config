@@ -19,10 +19,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -100,10 +100,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -119,12 +119,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # change the DPI
-exec xrandr --dpi 220
-# run gnome deamon for brightness and volume hotkeys
-exec /usr/libexec/gnome-settings-daemon
+# exec xrandr --dpi 220
 # run compton
-exec_always compton -f
-
+exec_always --no-startup-id compton -f 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
@@ -144,7 +141,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Wallpaper
-exec feh --bg-scale ~/Pictures/Wallpapers/main.jpg
+exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/main.jpg
 
 # Thin borders
 hide_edge_borders both
@@ -183,7 +180,7 @@ hide_edge_borders both
 new_window 1pixel
 
 # Rofi
-bindsym $mod+p exec rofi -show run uhide-scrollbar -fullscreen -padding 800 -lines 4 -font "Operator Mono for Powerline 28" -padding 400 -separator-style none
+bindsym $mod+p exec rofi -show run uhide-scrollbar -fullscreen -padding 400 -lines 4 -font "OperatorMono Nerd Font 18" -padding 500 -separator-style none
 
 # bar
 # bar {
@@ -205,17 +202,20 @@ bindsym $mod+p exec rofi -show run uhide-scrollbar -fullscreen -padding 800 -lin
 # }
 
 # redshift auto-start
-exec --no-startup-id redshift-gtk
+exec --no-startup-id redshift
 
 bindsym Print exec scrot
 
 # gaps
-gaps inner 10
-gaps outer 10
+gaps inner 5
+gaps outer 5
 
 # touchpad settings
-exec xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
-exec xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
+# exec xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+# exec xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
 
 # polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+# nm-applet
+exec_always --no-startup-id nm-applet

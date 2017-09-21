@@ -7,14 +7,14 @@
 ! config can be added there or also here below.
 ! For comments use "!"
 
-Xft.dpi: 220 
+! Xft.dpi: 200 
 Xft.antialias: true
 Xft.hinting: true
 Xft.rgba: rgb
 Xft.autohint: false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
-Xcursor.size: 64
+! Xcursor.size: 16
 
 ! XTerm*background: #2b2b2b
 ! XTerm*foreground: #e7e7e7
@@ -28,7 +28,7 @@ Xft.antialias: true
 Xft.hinting:   true
 Xft.rgba:      rgb
 Xft.hintstyle: hintfull
-Xft.dpi:       220
+! Xft.dpi:       100
 ! }}}
 
 rofi.color-enabled: true
