@@ -1,0 +1,1 @@
+/home/eloi/.config/fisherman/bass/functions/__bass.py

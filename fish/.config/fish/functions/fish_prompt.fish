@@ -1,1 +1,1 @@
-/home/eloi/.local/share/omf/themes/agnoster/fish_prompt.fish
+/home/eloi/.config/fisherman/agnoster/fish_prompt.fish

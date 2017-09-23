@@ -1,0 +1,1 @@
+/home/eloi/.config/fisherman/z/functions/__zo.fish

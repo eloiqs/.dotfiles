@@ -1,0 +1,1 @@
+/home/eloi/.config/fisherman/await/functions/await.fish

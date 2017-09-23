@@ -1,0 +1,1 @@
+/home/eloi/.config/fisherman/get/functions/get.fish
